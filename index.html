@@ -9,13 +9,29 @@
         <title>Urgency Banner</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" type="text/less" href="./style.less" />
+        <!-- Material Design Icon -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <script src="urgencyBanner.js" async defer></script>
+            <div id="banner-wrap" class="">
+                <div id="toggle-container">
+                    <button id="toggle-btn" onClick="bannerCollapse()">
+                        <i class="material-icons">expand_less</i>
+                    </button>
+                </div>
+                <div id="banner-contents">
+                    <span id="banner-text">Early Bird Pricing is Ending in Five Minutes, DAWG!!!</span>
+                    <button id="banner-btn" href="">Register Now</button>
+                </div>
+            </div>
+
+        <!-- LESS Script -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+        <!-- Urgency Banner Script -->
+        <script src="/urgencyBannery.js" async defer></script>
     </body>
 </html>
