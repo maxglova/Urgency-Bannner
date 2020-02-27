@@ -4,7 +4,7 @@
 function bannerCollapse() {
     document.getElementById('toggle-btn').addEventListener('click', function(){
         var bannerWrap = document.getElementById('banner-wrap');
-        bannerWrap.classList.toggle('hide', 'transition');
+        bannerWrap.classList.toggle('hide');
         console.log('it worked!')
     });
  }
